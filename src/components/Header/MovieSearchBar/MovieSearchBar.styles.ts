@@ -27,7 +27,7 @@ export const MovieSearchBarWrapper = styled.div`
 `;
 
 export const MovieSearchInput = styled.input`
-    width: 348px;
+    width: 696px;
     height: 48px;
     border-radius: 5px;
     border: none;

@@ -19,9 +19,8 @@ const MovieSearchBar = ({
             <MovieSearchInput
                 type="text"
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search by name"
+                placeholder="Search by name..."
             />
-            <MovieSearchInput type="text" placeholder="Search a city" />
             <MovieSearchButton onClick={() => onSearch(searchValue)}>
                 SEARCH NOW
             </MovieSearchButton>
