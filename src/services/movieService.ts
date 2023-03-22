@@ -5,7 +5,7 @@ export default async function searchMovie(
 ): Promise<IMovie[] | null> {
     try {
         const response = await fetch(
-            `http://www.omdbapi.com/?s=${searchValue}&apikey=cd3c3fd1`
+            `https://www.omdbapi.com/?s=${searchValue}&apikey=cd3c3fd1`
         );
         const data = await response.json();
         console.log(data);
