@@ -13,7 +13,7 @@ export default async function searchMovie(
             const movies: IMovie[] = [];
             for (const movie of data.Search) {
                 const plotResponse = await fetch(
-                    `http://www.omdbapi.com/?i=${movie.imdbID}&plot=short&apikey=cd3c3fd1`
+                    `https://www.omdbapi.com/?i=${movie.imdbID}&plot=short&apikey=cd3c3fd1`
                 );
                 const plotData = await plotResponse.json();
                 movies.push({
