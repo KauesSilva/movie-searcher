@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import breakpoints from "../../../../styles/breackpoints";
 import typography from "../../../../styles/typography";
+import { CiStar } from "react-icons/ci";
 
 const shimmer = keyframes`
     0% {
@@ -84,4 +85,8 @@ export const MovieCardStars = styled.footer`
     font-size: ${typography.fontSize.md};
     color: ${(props) => props.theme.text};
     line-height: 1.6rem;
+`;
+
+export const MovieCardStarIcon = styled(CiStar)`
+    color: ${(props) => props.theme.text};
 `;
