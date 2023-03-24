@@ -22,6 +22,7 @@ export default async function searchMovie(
                     Poster: plotData.Poster,
                     imdbRating: plotData.imdbRating,
                 });
+                console.log(data);
             }
             return movies;
         } else {

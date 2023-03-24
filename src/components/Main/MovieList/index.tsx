@@ -1,18 +1,32 @@
 import MovieCard from "./MovieCard";
 import React from "react";
 import IMovie from "../../../types/Movie";
+import MovieCardSkeleton from "./MovieCardSkeleton";
 
 interface MovieListProps {
-    movies: IMovie[],
+    movies: IMovie[];
     isLoading: boolean;
 }
 
 const MovieList: React.FC<MovieListProps> = ({ movies, isLoading }) => {
     return (
         <>
-            {movies.map((movie, index) => (
-                <MovieCard key={index} movie={movie}/>
-            ))}
+            {isLoading ? (
+                <>
+                    <MovieCardSkeleton />
+                    <MovieCardSkeleton />
+                    <MovieCardSkeleton />
+                    <MovieCardSkeleton />
+                    <MovieCardSkeleton />
+                    <MovieCardSkeleton />
+                </>
+            ) : (
+                <>
+                    {movies.map((movie, index) => (
+                        <MovieCard key={index} movie={movie} />
+                    ))}
+                </>
+            )}
         </>
     );
 };

@@ -1,16 +1,7 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../../../styles/breackpoints";
 import typography from "../../../../styles/typography";
 import { CiStar } from "react-icons/ci";
-
-const shimmer = keyframes`
-    0% {
-        background-position: -468px 0;
-    }
-    100% {
-        background-position: 468px 0;
-    }
-`;
 
 export const MovieCardWrapper = styled.div`
     display: flex;
