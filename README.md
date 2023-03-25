@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Movie Sercher</h1>
-    <p>A Media Searcher using React with TypeScript and styled with Styled Components.</p>
+    <p>A Movie Searcher built using React with TypeScript and styled with Styled Components.</p>
 </div>
 
 ![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-dark.png)
