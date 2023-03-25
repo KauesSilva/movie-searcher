@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Movie Sercher</h1>
-    <p>A CRUD system using React with TypeScript and styled with Tailwind.</p>
+    <p>A Media Searcher using React with TypeScript and styled with Styled Components.</p>
 </div>
 
 ![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-dark.png)
