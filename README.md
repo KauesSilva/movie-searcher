@@ -1,11 +1,11 @@
 <div align="center">
-    <h1>React CRUD</h1>
+    <h1>Movie Sercher</h1>
     <p>A CRUD system using React with TypeScript and styled with Tailwind.</p>
 </div>
 
-![](https://raw.githubusercontent.com/KauesSilva/react-crud/main/src/assets/project-background.png)
+![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-dark.png)
 <br>
-![](https://raw.githubusercontent.com/KauesSilva/react-crud/main/src/assets/project-background.png)
+![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-light.png)
 
 ## 🚀 How to use it
 
