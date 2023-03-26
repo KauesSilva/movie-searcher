@@ -5,7 +5,7 @@
 
 ![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-dark.png)
 <br>
-![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-light.png)
+![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/mockup-mobile.png)
 
 ## 🚀 How to use it
 
