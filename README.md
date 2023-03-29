@@ -55,10 +55,6 @@ yarn dev
     </a>
 </div>
 
-## 📕 Why/How it was built
-
-[soon]
-
 ## ✌️Contributing
 
 *NOTE: if you want to change, add, or fix something in the repo content you can do that cloning the repositorie locally*
