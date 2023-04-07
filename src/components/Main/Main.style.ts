@@ -7,7 +7,7 @@ export const MainWrapper = styled.main`
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh - 532px - 3rem);
+    min-height: calc(100vh - 632px - 6rem);
     background-color: ${(props) => props.theme.bgPrimary};
 `;
 

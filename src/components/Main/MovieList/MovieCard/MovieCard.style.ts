@@ -2,6 +2,7 @@ import styled from "styled-components";
 import breakpoints from "../../../../styles/breackpoints";
 import typography from "../../../../styles/typography";
 import { CiStar } from "react-icons/ci";
+import { lightTheme } from "../../../../styles/theme";
 
 export const MovieCardWrapper = styled.div`
     display: flex;
@@ -33,7 +34,6 @@ export const MovieCardImage = styled.div<{ poster: string }>`
     background-repeat: no-repeat;
     background-position: center;
 `;
-
 
 export const MovieCardBody = styled.main`
     display: flex;
@@ -67,8 +67,13 @@ export const MovieCardDescription = styled.p`
 export const MovieCardFooter = styled.footer`
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    gap: 0.5rem;
+`;
+
+export const MovieCardRating = styled.div`
+    display: flex;
+    gap: 0.5rem
 `;
 
 export const MovieCardStars = styled.footer`
@@ -81,4 +86,24 @@ export const MovieCardStars = styled.footer`
 
 export const MovieCardStarIcon = styled(CiStar)`
     color: ${(props) => props.theme.text};
+`;
+
+export const MovieCardButton = styled.button`
+    width: 110px;
+    height: 40px;
+    background-color: ${(props) => props.theme.primary};;
+    padding: 0.75 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: ${typography.fontWeight.bold};
+    font-size: ${typography.fontSize.sm};
+    font-family: ${typography.fontFamily.Roboto};
+    color: ${lightTheme.bgPrimary}; //fix it later//
+    cursor: pointer;
+    line-height: 1.5rem;
+    transition: all ease-in-out 0.3s;
+
+    :hover {
+        background-color: ${(props) => props.theme.hover.primary};
+    }
 `;

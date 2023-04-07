@@ -7,8 +7,11 @@ import {
     MovieCardStarIcon,
     MovieCardTitle,
     MovieCardWrapper,
+    MovieCardRating,
+    MovieCardButton,
 } from "./MovieCard.style";
 import IMovie from "../../../../types/Movie";
+import { TbArrowNarrowRight } from "react-icons/tb";
 
 interface MovieCardProps {
     movie: IMovie;
@@ -19,14 +22,19 @@ function MovieCard({ movie }: MovieCardProps): React.ReactElement {
         <MovieCardWrapper>
             <MovieCardImage poster={movie.Poster}></MovieCardImage>
             <MovieCardBody>
-            <MovieCardTitle>{movie.Title} ({new Date(movie.Year).getFullYear()})</MovieCardTitle>
+                <MovieCardTitle>
+                    {movie.Title} ({new Date(movie.Year).getFullYear()})
+                </MovieCardTitle>
                 <MovieCardDescription>{movie.Overview}</MovieCardDescription>
             </MovieCardBody>
             <MovieCardFooter>
-                <MovieCardStarIcon size={"1.5rem"}></MovieCardStarIcon>
-                <MovieCardStars>{`${parseFloat(movie.Rating).toFixed(
-                    1
-                )}/10`}</MovieCardStars>
+                <MovieCardRating>
+                    <MovieCardStarIcon size={"1.5rem"}></MovieCardStarIcon>
+                    <MovieCardStars>{`${parseFloat(movie.Rating).toFixed(
+                        1
+                    )}/10`}</MovieCardStars>
+                </MovieCardRating>
+                <MovieCardButton>Read More</MovieCardButton>
             </MovieCardFooter>
         </MovieCardWrapper>
     );

@@ -8,6 +8,7 @@ import IMovie from "../types/Movie";
 import { AppWrapper } from "./App.styled";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../styles/theme";
+import Footer from "../components/Footer";
 
 const getSystemTheme = (): "light" | "dark" => {
     const userPrefersDark =
@@ -70,6 +71,7 @@ function App(): React.ReactElement {
                         orderBy={orderBy}
                     />
                 </Main>
+                <Footer/>
             </AppWrapper>
         </ThemeProvider>
     );
