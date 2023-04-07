@@ -16,10 +16,11 @@ const getSystemTheme = (): "light" | "dark" => {
     return userPrefersDark ? "dark" : "light";
 };
 
-export default function App(): React.ReactElement {
+function App(): React.ReactElement {
     const [movieList, setMovieList] = useState<IMovie[]>([]);
     const [loading, setLoading] = useState(false);
     const [theme, setTheme] = useState(getSystemTheme());
+    const [orderBy, setOrderBy] = useState("default");
 
     const handleSearch = async (searchValue: string) => {
         setLoading(true);
@@ -52,16 +53,26 @@ export default function App(): React.ReactElement {
         };
     }, []);
 
+    const handleSortChange = (orderBy: string) => {
+        setOrderBy(orderBy);
+    };
+
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <AppWrapper>
                 <Header>
                     <MovieSearchBar onSearch={handleSearch} />
                 </Header>
-                <Main>
-                    <MovieList movies={movieList} isLoading={loading} />
+                <Main onSortChange={handleSortChange}>
+                    <MovieList
+                        movies={movieList}
+                        isLoading={loading}
+                        orderBy={orderBy}
+                    />
                 </Main>
             </AppWrapper>
         </ThemeProvider>
     );
 }
+
+export default App;

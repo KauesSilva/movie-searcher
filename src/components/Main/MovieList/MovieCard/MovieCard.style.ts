@@ -29,10 +29,11 @@ export const MovieCardImage = styled.div<{ poster: string }>`
     border-radius: 10px 10px 0 0;
     padding-top: 1rem;
     background-image: url(${(props) => props.poster});
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 `;
+
 
 export const MovieCardBody = styled.main`
     display: flex;

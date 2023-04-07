@@ -1,6 +1,8 @@
 export default interface IMovie{
+    Id: string;
     Title: string;
-    Plot: string;
+    Overview: string;
     Poster: string;
-    imdbRating: string,
+    Rating: string;
+    Year: string;
 }

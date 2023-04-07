@@ -9,7 +9,7 @@ import {
     MovieCardSkeletonWrapper,
 } from "./MovieCardSkeleton";
 
-const MovieCardSkeleton = () => {
+function MovieCardSkeleton() {
     return (
         <MovieCardSkeletonWrapper>
             <MovieCardSkeletonImage></MovieCardSkeletonImage>
@@ -23,6 +23,6 @@ const MovieCardSkeleton = () => {
             </MovieCardSkeletonFooter>
         </MovieCardSkeletonWrapper>
     );
-};
+}
 
 export default MovieCardSkeleton;

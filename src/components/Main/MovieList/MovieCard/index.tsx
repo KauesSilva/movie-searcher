@@ -14,20 +14,22 @@ interface MovieCardProps {
     movie: IMovie;
 }
 
-const MovieCard = ({ movie }: MovieCardProps) => {
+function MovieCard({ movie }: MovieCardProps): React.ReactElement {
     return (
         <MovieCardWrapper>
             <MovieCardImage poster={movie.Poster}></MovieCardImage>
             <MovieCardBody>
-                <MovieCardTitle>{movie.Title}</MovieCardTitle>
-                <MovieCardDescription>{movie.Plot}</MovieCardDescription>
+            <MovieCardTitle>{movie.Title} ({new Date(movie.Year).getFullYear()})</MovieCardTitle>
+                <MovieCardDescription>{movie.Overview}</MovieCardDescription>
             </MovieCardBody>
             <MovieCardFooter>
                 <MovieCardStarIcon size={"1.5rem"}></MovieCardStarIcon>
-                <MovieCardStars>{movie.imdbRating + " / 10.0"}</MovieCardStars>
+                <MovieCardStars>{`${parseFloat(movie.Rating).toFixed(
+                    1
+                )}/10`}</MovieCardStars>
             </MovieCardFooter>
         </MovieCardWrapper>
     );
-};
+}
 
 export default MovieCard;

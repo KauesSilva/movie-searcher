@@ -1,8 +1,10 @@
 import { HeaderWrapper, HeaderContent, HeaderTitle, HeaderSpan } from "./Header.styles";
+
 interface HeaderProps {
     children?: React.ReactNode
 }
-const Header = ({ children }: HeaderProps) : React.ReactElement => {
+
+function Header({ children }: HeaderProps) : React.ReactElement {
     return (
         <HeaderWrapper>
             <HeaderContent>

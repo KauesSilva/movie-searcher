@@ -22,6 +22,17 @@ export const MainContent = styled.section`
     }
 `;
 
+export const MainContentHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: ${breakpoints.smMobile}) {
+        flex-direction: column;
+        gap: 2rem;
+    }
+`;
+
 export const MainTitle = styled.h2`
     font-family: ${typography.fontFamily.Roboto};
     font-weight: ${typography.fontWeight.bold};

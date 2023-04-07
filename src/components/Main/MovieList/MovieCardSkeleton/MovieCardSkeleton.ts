@@ -30,6 +30,7 @@ export const MovieCardSkeletonWrapper = styled.div`
 export const MovieCardSkeletonImage = styled.div`
     width: 100%;
     height: 444px;
+    border-radius: 10px;
     background-color: ${(props) => props.theme.bgThird};
     animation: ${skeleton} 1s ease-in-out infinite alternate;
 `;
@@ -44,6 +45,7 @@ export const MovieCardSkeletonBody = styled.main`
 export const MovieCardSkeletonTitle = styled.div`
     width: 40%;
     height: 28px;
+    border-radius: 10px;
     background-color: ${(props) => props.theme.bgThird};
     animation: ${skeleton} 1s ease-in-out infinite alternate;
 `;
@@ -51,6 +53,7 @@ export const MovieCardSkeletonTitle = styled.div`
 export const MovieCardSkeletonDescription = styled.div`
     width: 100%;
     height: 52px;
+    border-radius: 10px;
     background-color: ${(props) => props.theme.bgThird};
     animation: ${skeleton} 1s ease-in-out infinite alternate;
 `;
@@ -72,6 +75,7 @@ export const MovieCardSkeletonStars = styled.div`
 export const MovieCardSkeletonStarIcon = styled.div`
     width: 24px;
     height: 24px;
+    border-radius: 10px;
     background-color: ${(props) => props.theme.bgThird};
     animation: ${skeleton} 1s ease-in-out infinite alternate;
 `;

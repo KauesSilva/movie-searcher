@@ -9,11 +9,8 @@ interface MovieSearchBarProps {
     onSearch: (searchValue: string) => void;
 }
 
-const MovieSearchBar = ({
-    onSearch,
-}: MovieSearchBarProps): React.ReactElement => {
+function MovieSearchBar({ onSearch }: MovieSearchBarProps): React.ReactElement {
     const [searchValue, setSearchValue] = useState("");
-
     return (
         <MovieSearchBarWrapper>
             <MovieSearchInput
@@ -26,6 +23,6 @@ const MovieSearchBar = ({
             </MovieSearchButton>
         </MovieSearchBarWrapper>
     );
-};
+}
 
 export default MovieSearchBar;
