@@ -1,11 +1,11 @@
 <div align="center">
     <h1>Movie Sercher</h1>
-    <p>A CRUD system using React with TypeScript and styled with Tailwind.</p>
+    <p>A Movie Searcher built using React with TypeScript and styled with Styled Components.</p>
 </div>
 
 ![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-dark.png)
 <br>
-![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/desktop-light.png)
+![](https://raw.githubusercontent.com/KauesSilva/movie-searcher/main/src/assets/readme/mockup-mobile.png)
 
 ## 🚀 How to use it
 
@@ -54,10 +54,6 @@ yarn dev
         <img alt="Styled Components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
     </a>
 </div>
-
-## 📕 Why/How it was built
-
-[soon]
 
 ## ✌️Contributing
 
