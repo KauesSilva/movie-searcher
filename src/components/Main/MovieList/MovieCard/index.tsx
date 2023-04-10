@@ -34,7 +34,6 @@ function MovieCard({ movie }: MovieCardProps): React.ReactElement {
                         1
                     )}/10`}</MovieCardStars>
                 </MovieCardRating>
-                <MovieCardButton>Read More</MovieCardButton>
             </MovieCardFooter>
         </MovieCardWrapper>
     );
