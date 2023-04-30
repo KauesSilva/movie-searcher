@@ -11,7 +11,7 @@
 
 **Access Remotely**
 
-<a href="ts-movie-searcher.vercel.app/" target="_blank"></a>
+<a href="ts-movie-searcher.vercel.app/" target="_blank">ts-movie-searcher.vercel.app/</a>
 
 _NOTE: The default branch for this repo is `main`, when you push or pull make sure you specify the correct branch_
 
