@@ -11,7 +11,7 @@
 
 **Access Remotely**
 
-<a href="https://ts-movie-searcher.vercel.app" target="_blank">ts-movie-searcher.vercel.app/</a>
+<a href="https://ts-movie-searcher.vercel.app" target="_blank">https://ts-movie-searcher.vercel.app</a>
 
 **Run the site locally**
 
