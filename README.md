@@ -54,7 +54,7 @@ yarn dev
     <a href="https://www.typescriptlang.org/docs/" target="_blank">
         <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
     </a>
-    <a href="https://tailwindcss.com/" target="_blank">
+    <a href="https://styled-components.com/docs" target="_blank">
         <img alt="Styled Components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
     </a>
 </div>
